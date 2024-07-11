@@ -27,17 +27,17 @@ const FullNameDisplay = () => {
       // > */}
         <div>
           First Name:
-          <input type="text" onChange={handleFirstName} required />
+          <input type="text" onChange={handleFirstName}  />
         </div>
         <div>
           Last Name:
-          <input type="text" onChange={handleLastName} required />
+          <input type="text" onChange={handleLastName} />
           <div>
           <button type="submit">Submit</button>
           </div>
         </div>
       </form>
-      <p>{text}</p>
+      {firstName&&lastName&&<p>{text}</p>}
     </>
   );
 };
