@@ -15,14 +15,16 @@ const FullNameDisplay = () => {
   return (
     <>
       <h1>Full Name Display</h1>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
+      <form onSubmit={(e)=>{e.preventDefault();
+        setText(`Full Name: ${firstName} ${lastName}`);
+      }}>
+        {/* // onSubmit={(e) => {
+        //   e.preventDefault();
           // if (!firstName) alert("firstname is manadatory");
           // else if (!lastName) alert("lastname is manadatory");
           // else setText(`Full Name: ${firstName} ${lastName}`);
-        }}
-      >
+      //   }}
+      // > */}
         <div>
           First Name:
           <input type="text" onChange={handleFirstName} required />
@@ -31,7 +33,7 @@ const FullNameDisplay = () => {
           Last Name:
           <input type="text" onChange={handleLastName} required />
           <div>
-            <button type="submit">submit</button>
+          <button type="submit">Submit</button>
           </div>
         </div>
       </form>
