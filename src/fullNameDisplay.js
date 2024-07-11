@@ -31,7 +31,7 @@ const FullNameDisplay = () => {
           Last Name:
           <input type="text" onChange={handleLastName} required />
           <div>
-            <input type="submit" />
+            <button type="submit">submit</button>
           </div>
         </div>
       </form>
